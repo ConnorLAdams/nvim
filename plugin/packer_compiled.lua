@@ -79,12 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  cyberdream = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme cyberdream\bcmd\bvim\0" },
-    loaded = true,
-    path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cyberdream",
-    url = "https://github.com/scottmckendry/cyberdream.nvim"
-  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
@@ -107,6 +101,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  melange = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme melange\bcmd\bvim\0" },
+    loaded = true,
+    path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\melange",
+    url = "https://github.com/savq/melange-nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -140,6 +140,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["telescope-media-files.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-media-files.nvim",
+    url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -158,10 +168,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: cyberdream
-time([[Config for cyberdream]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme cyberdream\bcmd\bvim\0", "config", "cyberdream")
-time([[Config for cyberdream]], false)
+-- Config for: melange
+time([[Config for melange]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme melange\bcmd\bvim\0", "config", "melange")
+time([[Config for melange]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd mason.nvim ]]

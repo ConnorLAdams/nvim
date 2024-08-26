@@ -7,17 +7,19 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use('nvim-lua/popup.nvim')
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.8',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use('nvim-telescope/telescope-media-files.nvim')
 
   use { 
-	  'scottmckendry/cyberdream.nvim',
-	  as = 'cyberdream',
+	  'savq/melange-nvim',
+	  as = 'melange',
 	  config = function()
-		  vim.cmd('colorscheme cyberdream')
+		  vim.cmd('colorscheme melange')
 	  end
   }
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})

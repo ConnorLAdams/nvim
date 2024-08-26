@@ -1,3 +1,13 @@
+require('telescope').setup{
+    extension = {
+        media_files = {
+            filetypes = {"png", "webp", "jpg", "jpeg"},
+            find_cmd = 'rg'
+        }
+    },
+}
+require('telescope').load_extension('media_files')
+
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 vim.keymap.set('n', '<leader>ph', function()
