@@ -28,11 +28,16 @@ lsp_zero.extend_lspconfig({
 
 -- These are just examples. Replace them with the language
 -- servers you have installed in your system
-require('lspconfig').gleam.setup({})
-require('lspconfig').rust_analyzer.setup({})
-require('lspconfig').gopls.setup({})
-require('lspconfig').pyright.setup({})
-require('lspconfig').tsserver.setup({})
+require('mason').setup()
+require("mason-lspconfig").setup {
+    ensure_installed = { "gopls", "pyright", "marksman", "rust_analyzer" },
+}
+require('lspconfig').gleam.setup {}
+require('lspconfig').rust_analyzer.setup {}
+require('lspconfig').gopls.setup {}
+require('lspconfig').pyright.setup {}
+require('lspconfig').marksman.setup {}
+require('lspconfig').tsserver.setup {}
 
 ---
 -- Autocompletion setup
