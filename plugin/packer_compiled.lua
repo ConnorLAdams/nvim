@@ -108,6 +108,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\melange",
     url = "https://github.com/savq/melange-nvim"
   },
+  ["neovim-move"] = {
+    loaded = true,
+    path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim-move",
+    url = "https://github.com/kovetskiy/neovim-move"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Connor\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",

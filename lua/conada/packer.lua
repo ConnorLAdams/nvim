@@ -43,4 +43,5 @@ use({"williamboman/mason-lspconfig.nvim", after="mason.nvim"})
 use({"neovim/nvim-lspconfig", after="mason-lspconfig.nvim"}) -- enable LSP
 use({'hrsh7th/nvim-cmp'})
 use({'hrsh7th/cmp-nvim-lsp'})
+use({'kovetskiy/neovim-move'})
 end)
