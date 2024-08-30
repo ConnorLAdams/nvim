@@ -36,8 +36,12 @@ require('lspconfig').gleam.setup {}
 require('lspconfig').rust_analyzer.setup {}
 require('lspconfig').gopls.setup {}
 require('lspconfig').pyright.setup {}
-require('lspconfig').marksman.setup {}
 require('lspconfig').tsserver.setup {}
+
+local root_pattern = require('lspconfig.util').root_pattern
+require('lspconfig').marksman.setup {
+    root_dir = root_pattern('.git', '.marksman.toml'),
+}
 
 ---
 -- Autocompletion setup

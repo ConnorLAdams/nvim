@@ -43,4 +43,37 @@ use({"williamboman/mason-lspconfig.nvim", after="mason.nvim"})
 use({"neovim/nvim-lspconfig", after="mason-lspconfig.nvim"}) -- enable LSP
 use({'hrsh7th/nvim-cmp'})
 use({'hrsh7th/cmp-nvim-lsp'})
+
+use({'mfussenegger/nvim-dap'})
+use({'mfussenegger/nvim-dap-python'})
+use({
+    "benlubas/molten-nvim",
+    version = "^1.0.0", -- use version <2.0.0 to avoid breaking changes
+    build = ":UpdateRemotePlugins",
+    init = function()
+        -- this is an example, not a default. Please see the readme for more configuration options
+        vim.g.molten_output_win_max_height = 12
+    end,
+})
+use(
+    {
+        "quarto-dev/quarto-nvim",
+        requires = {
+            {"jmbuhr/otter.nvim"},
+            {"nvim-treesitter/nvim-treesitter"},
+        }
+    }
+)
+use(
+    {
+        "GCBallesteros/jupytext.nvim",
+       -- config = true,
+    }
+)
+use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
 end)

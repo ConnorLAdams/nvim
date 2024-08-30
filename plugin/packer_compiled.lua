@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["jupytext.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\jupytext.nvim",
+    url = "https://github.com/GCBallesteros/jupytext.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
@@ -108,10 +113,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\melange",
     url = "https://github.com/savq/melange-nvim"
   },
+  ["molten-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\molten-nvim",
+    url = "https://github.com/benlubas/molten-nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-python"] = {
+    loaded = true,
+    path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-python",
+    url = "https://github.com/mfussenegger/nvim-dap-python"
   },
   ["nvim-lspconfig"] = {
     load_after = {},
@@ -124,6 +144,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["otter.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\otter.nvim",
+    url = "https://github.com/jmbuhr/otter.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -144,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["quarto-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ConnorAdams\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\quarto-nvim",
+    url = "https://github.com/quarto-dev/quarto-nvim"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,
