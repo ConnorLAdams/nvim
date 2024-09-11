@@ -36,7 +36,7 @@ require('lspconfig').gleam.setup {}
 require('lspconfig').rust_analyzer.setup {}
 require('lspconfig').gopls.setup {}
 require('lspconfig').pyright.setup {}
-require('lspconfig').tsserver.setup {}
+require('lspconfig').ts_ls.setup {}
 
 local root_pattern = require('lspconfig.util').root_pattern
 require('lspconfig').marksman.setup {

@@ -1,6 +1,12 @@
+-- When this package update you will want to replace the path in 'nvim-data/rplugin.vim' with the below path
+-- 'C:\\\\Users\\\\ConnorAdams\\\\AppData\\\\Local\\\\nvim-data\\\\site\\\\pack\\\\packer\\\\start\\\\molten-nvim\\\\rplugin\\\\python3\\\\moten'
+-- Use the following command instead
+--      - cp $env:XDG_CONFIG_HOME/nvim/rplugin_molten.txt $env:LOCALAPPDATA/nvim-data/rplugin.vim
+
 vim.keymap.set("n", "<leader>me", ":MoltenEvaluateOperator<CR>", { desc = "evaluate operator", silent = true })
 vim.keymap.set("n", "<leader>mi", ":MoltenInit<CR>", { desc = "init molten", silent = true })
 vim.keymap.set("n", "<leader>mdi", ":MoltenDeinit<CR>", { desc = "init molten", silent = true })
+vim.keymap.set("n", "<leader>mri", ":MoltenRestart<CR>", { desc = "restart molten", silent = true })
 vim.keymap.set("n", "<leader>mos", ":noautocmd MoltenEnterOutput<CR>", { desc = "open output window", silent = true })
 
 -- I find auto open annoying, keep in mind setting this option will require setting
