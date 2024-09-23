@@ -10,7 +10,7 @@
 " ruby plugins
 
 "                                            \/ --- This file path
-call remote#host#RegisterPlugin('python3', 'C:\\\\Users\\\\ConnorAdams\\\\AppData\\\\Local\\\\nvim-data\\\\site\\\\pack\\\\packer\\\\start\\\\molten-nvim\\\\rplugin\\\\python3\\\\moten', [
+call remote#host#RegisterPlugin('python3', 'C:\\\\Users\\\\ConnorAdams\\\\AppData\\\\Local\\\\nvim-data\\\\site\\\\pack\\\\packer\\\\start\\\\molten-nvim\\\\rplugin\\\\python3\\\\molten', [
       \ {'sync': v:true, 'name': 'MoltenDeinit', 'type': 'command', 'opts': {}},
       \ {'sync': v:true, 'name': 'MoltenDelete', 'type': 'command', 'opts': {}},
       \ {'sync': v:true, 'name': 'MoltenEnterOutput', 'type': 'command', 'opts': {}},
