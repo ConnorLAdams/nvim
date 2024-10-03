@@ -28,7 +28,6 @@ lsp_zero.extend_lspconfig({
 
 -- These are just examples. Replace them with the language
 -- servers you have installed in your system
-<<<<<<< Updated upstream
 require('mason').setup()
 require("mason-lspconfig").setup {
     ensure_installed = { "gopls", "pyright", "marksman", "rust_analyzer" },
@@ -43,13 +42,11 @@ local root_pattern = require('lspconfig.util').root_pattern
 require('lspconfig').marksman.setup {
     root_dir = root_pattern('.git', '.marksman.toml'),
 }
-=======
 require('lspconfig').gleam.setup({})
 require('lspconfig').rust_analyzer.setup({})
 require('lspconfig').gopls.setup({})
 require('lspconfig').pyright.setup({})
 require('lspconfig').ts_ls.setup({})
->>>>>>> Stashed changes
 
 ---
 -- Autocompletion setup
