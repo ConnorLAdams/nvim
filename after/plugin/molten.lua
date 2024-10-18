@@ -33,6 +33,8 @@ vim.keymap.set("n", "<leader>mrr", ":MoltenReevaluateCell<CR>", { desc = "re-eva
 vim.keymap.set("v", "<leader>mr", ":<C-u>MoltenEvaluateVisual<CR>gv", { desc = "execute visual selection", silent = true })
 vim.keymap.set("n", "<leader>moh", ":MoltenHideOutput<CR>", { desc = "close output window", silent = true })
 vim.keymap.set("n", "<leader>mmd", ":MoltenDelete<CR>", { desc = "delete Molten cell", silent = true })
+vim.keymap.set("n", "<leader>mn", ":MoltenNext<CR>", { desc = "Next Molten cell", silent = true })
+vim.keymap.set("n", "<leader>mp", ":MoltenPrev<CR>", { desc = "Prev Molten cell", silent = true })
 
 -- if you work with html outputs:
 vim.keymap.set("n", "<leader>mx", ":MoltenOpenInBrowser<CR>", { desc = "open output in browser", silent = true })

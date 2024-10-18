@@ -9,3 +9,16 @@ mkdir -p ~/.config/nvim
 7. Install node & npm
 8. :so in init.lua
 9. :PackerSync
+
+# Using Molten
+1. Install using Packer
+2. Activate venv
+3. Install the necessary Packages
+```zsh
+pip install pynvim jupyter-client
+```
+4. Open nvim and run UpdateRemotePlugins
+```nvim
+:UpdateRemorePlugins
+```
+5. Open `.ipynb` file and have fun.

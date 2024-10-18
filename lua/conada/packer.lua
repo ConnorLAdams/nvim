@@ -59,15 +59,13 @@ return require('packer').startup(function(use)
             vim.g.molten_output_win_max_height = 12
         end,
     })
-    use(
-        {
+    use({
             "quarto-dev/quarto-nvim",
             requires = {
                 {"jmbuhr/otter.nvim"},
                 {"nvim-treesitter/nvim-treesitter"},
             }
-        }
-    )
+        })
     use(
         {
             "GCBallesteros/jupytext.nvim",
