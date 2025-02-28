@@ -13,6 +13,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
+vim.keymap.set("v", "<leader>'", "c''<C-c>P")
+vim.keymap.set("v", "<leader>\"", "c\"\"<C-c>P")
+
 -- Copy to system clipboard
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")

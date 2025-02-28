@@ -87,5 +87,19 @@ return require('packer').startup(function(use)
         end, 
         ft = { "markdown" }, 
     })
+    
+    -- use({
+    --     'phdah/lazydbrix',
+    --     -- NOTE: Uses go to install.
+    --     -- Make sure it's present on the system.
+    --     build = ':lua require("lazydbrix").install()',
+    --     requires = {{"voldikss/vim-floaterm"}}
+    -- })
 
+    use({
+        'phdah/nvim-databricks',
+        requires = {{'mfussenegger/nvim-dap'}}
+    })
+
+    
 end)
