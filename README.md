@@ -10,6 +10,11 @@ mkdir -p ~/.config/nvim
 8. :so in init.lua
 9. :PackerSync
 
+# Recommendations
+1. Install ripgrep
+    - `brew install ripgrep`
+    - This will make telescope (searching files) faster.
+
 # Using Molten
 1. Install using Packer
 2. Activate venv

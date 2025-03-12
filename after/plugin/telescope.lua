@@ -1,4 +1,9 @@
 require('telescope').setup{
+    defaults = {
+        file_ignore_patterns = {
+            "node_modules"
+        }
+    },
     extension = {
         media_files = {
             filetypes = {"png", "webp", "jpg", "jpeg"},
