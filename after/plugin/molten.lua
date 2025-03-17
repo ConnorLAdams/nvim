@@ -47,7 +47,6 @@ vim.keymap.set("n", "<leader>mip", ":MoltenInit python3<CR>", { desc = "Molten i
 -- New python cell
 local default_cell = {
 	"```{python}",
-	"",
 	"```"
 }
 local function new_python_cell()
