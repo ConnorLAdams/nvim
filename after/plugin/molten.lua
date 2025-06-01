@@ -49,31 +49,28 @@ local default_cell = {
 	"```{python}",
 	"```"
 }
-local function new_python_cell()
+local function new_python_cell_below()
   local row, col = unpack(vim.api.nvim_win_get_cursor(0))
-  local lines = vim.api.nvim_buf_get_lines(0, row - 1, row, false)
-  local line = lines[1]
-  local before_cursor = line:sub(1, col)
-  local after_cursor = line:sub(col + 1)
-  local new_lines = { before_cursor .. default_cell[1] }
-  for i = 2, #default_cell do
-    table.insert(new_lines, default_cell[i])
-  end
-  table.insert(new_lines, after_cursor)
-  vim.api.nvim_buf_set_lines(0, row - 1, row, false, new_lines)
-end
-vim.api.nvim_create_user_command('NewPythonCell', function()
-  new_python_cell()
-end, {})
-local function new_python_cell2()
-    local line = vim.api.nvim_get_current_line()
-    local col = vim.api.nvim_win_get_cursor(0)[2]
-    local new_line = line:sub(1, col) .. default_cell .. line:sub(col+1)
-    vim.api.nvim_set_current_line(new_line)
-end
-vim.api.nvim_create_user_command('NewPythonCell', new_python_cell, {})
-vim.keymap.set("n", "<leader>mb", ":NewPythonCell<CR>", {silent = true, noremap = true})
 
+  vim.api.nvim_buf_set_lines(0, row, row, false, default_cell)
+
+  vim.api.nvim_win_set_cursor(0, {row + 2, 0})
+end
+vim.api.nvim_create_user_command('NewPythonCellBelow', function()
+  new_python_cell_below()
+end, {})
+
+local function new_python_cell_above()
+  local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+
+  vim.api.nvim_buf_set_lines(0, row-1, row-1, false, default_cell)
+  
+  vim.api.nvim_win_set_cursor(0, {row, 0})
+end
+vim.api.nvim_create_user_command('NewPythonCellAbove', new_python_cell_above, {})
+
+vim.keymap.set("n", "<leader>mb", ":NewPythonCellBelow<CR>", {silent = true, noremap = true})
+vim.keymap.set("n", "<leader>ma", ":NewPythonCellAbove<CR>", {silent = true, noremap = true})
 -- Provide a command to create a blank new Python notebook
 -- note: the metadata is needed for Jupytext to understand how to parse the notebook.
 -- if you use another language than Python, you should change it in the template.
