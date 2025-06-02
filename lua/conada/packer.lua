@@ -3,6 +3,10 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
+require("packer").init({
+  package_root = "~/.local/share/nvim/site/pack"
+})
+
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -43,7 +47,10 @@ return require('packer').startup(function(use)
         }
 	})
     use({"williamboman/mason.nvim"})
-    use({"williamboman/mason-lspconfig.nvim", after="mason.nvim"})
+    use({
+        "williamboman/mason-lspconfig.nvim", after="mason.nvim",
+        tag = "v1.32.0"
+    })
     use({"neovim/nvim-lspconfig", after="mason-lspconfig.nvim"}) -- enable LSP
     use({'hrsh7th/nvim-cmp'})
     use({'hrsh7th/cmp-nvim-lsp'})
