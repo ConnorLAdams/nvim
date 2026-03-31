@@ -32,16 +32,17 @@ require('mason').setup()
 require("mason-lspconfig").setup {
     ensure_installed = { "gopls", "pyright", "marksman", "rust_analyzer" },
 }
-require('lspconfig').gleam.setup {}
-require('lspconfig').rust_analyzer.setup {}
-require('lspconfig').gopls.setup {}
-require('lspconfig').pyright.setup {}
-require('lspconfig').ts_ls.setup {}
+vim.lsp.enable({ 'gleam', 'rust_analyzer', 'gopls', 'pyright', 'ts_ls' })
+-- require('lspconfig').gleam.setup {}
+-- require('lspconfig').rust_analyzer.setup {}
+-- require('lspconfig').gopls.setup {}
+-- require('lspconfig').pyright.setup {}
+-- require('lspconfig').ts_ls.setup {}
 
 local root_pattern = require('lspconfig.util').root_pattern
-require('lspconfig').marksman.setup {
+vim.lsp.config('marksman', {
     root_dir = root_pattern('.git', '.marksman.toml'),
-}
+})
 
 ---
 -- Autocompletion setup
