@@ -108,5 +108,12 @@ return require('packer').startup(function(use)
         requires = {{'mfussenegger/nvim-dap'}}
     })
 
+    use({
+        'lervag/vimtex',
+        lazy = false,
+        init = function()
+            vim.g.vimtex_view_method = "zathura"
+        end
+    })
     
 end)
